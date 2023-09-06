@@ -7,9 +7,6 @@ export class MedicineInventory{
 
  
 
-
-
-
 export abstract class AbstractHttpCommunication
 {
     abstract GetMedicines():Observable<MedicineInventory[]>;
