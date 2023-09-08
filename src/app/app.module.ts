@@ -10,6 +10,8 @@ import { MedComponent } from './med/med.component';
 import { MedoperationsComponent } from './medoperations/medoperations.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //import { ChartComponent } from './chart/chart.component';
 
  
@@ -19,11 +21,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     MedComponent,
     MedoperationsComponent,
+    LoginComponent,
     //ChartComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [{provide:AbstractHttpCommunication, useClass:HttpCommunication}],
   bootstrap: [AppComponent]
